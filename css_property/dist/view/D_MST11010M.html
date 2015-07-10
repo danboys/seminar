@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>Emart Eveyday Smart Office</title>
+    <link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ui/bootstrap-theme-kr.css">
+    <link rel="stylesheet" href="../css/ui/bootstrap-theme-kr-media.css">
+</head>
+<body>
+<div class="rs-body">
+    <div class="rs-wrap">
+        <!--Navigation Section-->
+        <div class="rs-nav">
+            <!--Navigation header -->
+            <div class="nav_title title" position="fixed"> 헤더 영역 (Left) <span class="_revealToggle">메뉴</span></div>
+            <!--//Navigation header -->
+            <!--Navigation content(필수) -->
+            <div class="celeb_wrap" id="celeblist_scroll">
+                <div> 메뉴 영역입니다.</div>
+            </div>
+            <!--//Navigation content(필수) -->
+        </div>
+        <!--//Navigation Section-->
+        <!--Contents Section-->
+        <div class="rs-contents">
+            <div class="jmc-page">
+                <!-- Contents Header -->
+                <header class="jmc-header" position="fixed">
+                    <div class="title">
+                        <h1>상품정보조회</h1>
+                        <button type="button" class="btn-home disabled">Home</button>
+                        <!--disabled class 사용시 버튼 비활성화-->
+                        <button type="button" class="btn-menu disabled _revealToggle">메뉴</button>
+                        <!--disabled class 사용시 버튼 비활성화-->
+                    </div>
+                </header>
+                <!-- // Contents Header -->
+                <!-- 컨텐츠 영역 시작 -->
+                <div id="contents" class="jmc-content content-wrap">
+                    <div style="width:100%">
+                        <!--Contents 본문-->
+                        <div class="search-wrap have-s-buttons" id="form_base">
+                            <div class="form-wrap fit-textinput-unit">
+                                <div>
+                                    <input type="tel" placeholder="상품코드 입력">
+                                    <button type="button" class="btn-w-del fit-clear-btn">입력내용지우기</button>
+                                </div>
+                                <button type="button" class="btn-search">Search</button>
+                            </div>
+                            <div class="s-buttons">
+                                <button type="button" class="btn-b-scan"><span class="bg">바코드스캔</span></button>
+                                <button type="button" class="btn-more" id="_btnSearch"><span class="bg">More</span>
+                                </button>
+                            </div>
+                            <ul class="more-toggle" id="_searchMenu">
+                                <li class="_productSearch">상품검색</li>
+                                <!--Active: addClass on-->
+                            </ul>
+                        </div>
+
+                        <!--검색전-->
+                        <!--<div class="txt-valign">상품정보를 조회해 주세요.</div>-->
+                        <!--//검색전-->
+
+                        <div class="board-wrap">
+                            <table class="board view">
+                                <colgroup>
+                                    <col style="width:7.8rem">
+                                    <col>
+                                    <col style="width:7.2rem">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>상품코드</th>
+                                    <td colspan="3">3694562580123</td>
+                                </tr>
+                                <tr>
+                                    <th>상품명</th>
+                                    <td colspan="3">파르테논 2구 스위치</td>
+                                </tr>
+                                <tr>
+                                    <th>협력회사</th>
+                                    <td colspan="3">파나소닉ES신동아(주)서울지사</td>
+                                </tr>
+                                <tr>
+                                    <th>매입형태</th>
+                                    <td>직매입</td>
+                                    <th>기능구분</th>
+                                    <td>TC</td>
+                                </tr>
+                                <tr>
+                                    <th>대분류</th>
+                                    <td colspan="3">(343)공구</td>
+                                </tr>
+                                <tr>
+                                    <th>중분류</th>
+                                    <td colspan="3">(3933)공구</td>
+                                </tr>
+                                <tr>
+                                    <th>소분류</th>
+                                    <td colspan="3">(2920)전동/수공구</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <hr class="dash-line"/>
+                            <table class="board view">
+                                <colgroup>
+                                    <col style="width:7.8rem">
+                                    <col>
+                                    <col style="width:7.2rem">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>박스입수</th>
+                                    <td>21</td>
+                                    <th>낱개입수</th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th>낱개운영</th>
+                                    <td class="input-data"><input type="checkbox" checked="checked"></td>
+                                    <th>행사정보</th>
+                                    <td>행사실시</td>
+                                </tr>
+                                <tr>
+                                    <th>원가(원)</th>
+                                    <td>999,999</td>
+                                    <th>매가(원)</th>
+                                    <td>999,999</td>
+                                </tr>
+                                <tr>
+                                    <th>운영상태</th>
+                                    <td>스크랩예정</td>
+                                    <th>재고량</th>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <th>정상재고</th>
+                                    <td>999</td>
+                                    <th>불량재고</th>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <th>전일매출</th>
+                                    <td>11</td>
+                                    <th>당일매입</th>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <th>POG필요</th>
+                                    <td>불필요</td>
+                                    <th>POG작성</th>
+                                    <td>미작성</td>
+                                </tr>
+                                <tr>
+                                    <th>입점량</th>
+                                    <td>999</td>
+                                    <th>입점예정량</th>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <th>주간폐기량</th>
+                                    <td>999</td>
+                                    <th>주간판매량</th>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <th>주간인하량</th>
+                                    <td>999</td>
+                                    <th>요일판매량</th>
+                                    <td>999</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!--//Contents 본문-->
+                    </div>
+                </div>
+                <!-- //컨텐츠 영역 끝 -->
+                <!-- Contents Footer -->
+                <footer class="jmc-footer" position="fixed">
+                    <button type="button" class="btn-f-pre"><span class="ico"></span>이전</button>
+                    <button type="button" class="btn-f-menu disabled" id="_btnLink"><span class="ico"></span>연관메뉴
+                    </button>
+                    <ul class="f-r-menu" id="_linkMenu">
+                        <li>쇼카드 라벨 발행</li>
+                        <li>재고정보 조회</li>
+                        <li>가공발주 등록</li>
+                        <li>가공발주 내역조회</li>
+                    </ul>
+                    <button type="button" class="btn-f-add-menu disabled"><span class="ico"></span>메뉴등록</button>
+                    <button type="button" class="btn-f-add-favorites disabled"><span class="ico"></span>즐겨찾기</button>
+                    <button type="button" class="btn-f-top"><span class="ico"></span>맨위로</button>
+                </footer>
+                <!-- //Contents Footer -->
+            </div>
+        </div>
+        <!--//Contents Section-->
+    </div>
+</div>
+<script type="text/javascript" src="../js/lib/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/lib/jindo.js"></script>
+<script type="text/javascript" src="../js/lib/jindo_mobile_component.js"></script>
+<script type="text/javascript" src="../js/lib/jquery.plugin.js"></script>
+<script type="text/javascript" src="../js/ui/ui.common.js"></script>
+<script type="text/javascript">
+    $("._productSearch").on('click', function () {
+        $.ajax({
+            type: 'post',
+            url: '../html/D_ORD12070M.html',
+            dataType: 'html',
+            success: function (data) {
+                //console.log(data)
+                // 팝업 데이터 바인딩
+                $("body").append(data);
+
+                // 스크롤 영역 셋팅
+                oEmartMO.setPopupScroll();
+                //oEmartMO._setTextInput();
+                //하단에 닿을시 발생 이벤트
+                oEmartMO.oScrollPopup.attach("afterScroll", function (we) {
+                    if (we.nMaxScrollTop + oEmartMO.nGap > we.nTop) {
+                        //fakeData(제거)
+                        var welList = $('#_popupScroll').find('ol');
+                        var fakeData = welList.html();
+
+                        //로딩바 보이기(필수)
+                        oEmartMO.showLoading();
+                        //Ajax 호출 후 넣을때 해야할 일(제거)
+                        EmartMO.util.wait(1000).done(function () {
+
+                            //Ajax Data 넣기(제거)
+                            welList.append(fakeData);
+
+                            //로딩바 감추기(필수)
+                            oEmartMO.hideLoading()
+
+                            //스크롤 이벤트 재활성(필수)
+                            oEmartMO.oScrollPopup.refresh();
+                        });
+                    }
+                });
+            }
+        });
+    })
+</script>
+</body>
+</html>

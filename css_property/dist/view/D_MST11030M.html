@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>진열조회</title>
+    <link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ui/bootstrap-theme-kr.css">
+    <link rel="stylesheet" href="../css/ui/bootstrap-theme-kr-media.css">
+</head>
+<body>
+<div class="rs-body">
+    <div class="rs-wrap">
+        <!--Navigation Section-->
+        <div class="rs-nav">
+            <!--Navigation header -->
+            <div class="nav_title title" position="fixed"> 헤더 영역 (Left) <span class="_revealToggle">메뉴</span></div>
+            <!--//Navigation header -->
+            <!--Navigation content(필수) -->
+            <div class="celeb_wrap" id="celeblist_scroll">
+                <div> 메뉴 영역입니다.</div>
+            </div>
+            <!--//Navigation content(필수) -->
+        </div>
+        <!--//Navigation Section-->
+        <!--Contents Section-->
+        <div class="rs-contents">
+            <div class="jmc-page">
+                <!-- Contents Header -->
+                <header class="jmc-header" position="fixed">
+                    <div class="title">
+                        <h1>진열조회</h1>
+                        <button type="button" class="btn-home disabled">Home</button>
+                        <!--disabled class 사용시 버튼 비활성화-->
+                        <button type="button" class="btn-menu disabled _revealToggle">메뉴</button>
+                        <!--disabled class 사용시 버튼 비활성화-->
+                    </div>
+                </header>
+                <!-- // Contents Header -->
+
+                <!-- 컨텐츠 영역 시작 -->
+                <div id="contents" class="jmc-content content-wrap">
+                    <div>
+                        <!--Contents 본문-->
+
+                        <div class="data-info">각 카테고리를 선택하여 POG를 조회해주세요.</div>
+
+                        <div class="category-link-wrap">
+                            <button type="button" class="on">주류</button>
+                            <button type="button">유제품</button>
+                            <button type="button">음료</button>
+                            <button type="button">커피차</button>
+                            <button type="button">조미료</button>
+                            <button type="button">대용식</button>
+                            <button type="button">통조림</button>
+                            <button type="button">과자</button>
+                            <button type="button">건강식품</button>
+                            <button type="button">바디케어</button>
+                        </div>
+
+
+                        <!--//Contents 본문-->
+                    </div>
+                </div>
+                <!-- //컨텐츠 영역 끝 -->
+                <!-- Contents Footer -->
+                <footer class="jmc-footer" position="fixed">
+                    <button type="button" class="btn-f-pre"><span class="ico"></span>이전</button>
+                    <button type="button" class="btn-f-menu" id="_btnLink"><span class="ico"></span>연관메뉴</button>
+                    <ul class="f-r-menu" id="_linkMenu">
+                        <li>쇼카드 라벨 발행</li>
+                        <li>재고정보 조회</li>
+                        <li>가공발주 등록</li>
+                        <li>가공발주 내역조회</li>
+                    </ul>
+                    <button type="button" class="btn-f-add-menu"><span class="ico"></span>메뉴등록</button>
+                    <button type="button" class="btn-f-add-favorites"><span class="ico"></span>즐겨찾기</button>
+                    <button type="button" class="btn-f-top"><span class="ico"></span>맨위로</button>
+                </footer>
+                <!-- //Contents Footer -->
+            </div>
+        </div>
+        <!--//Contents Section-->
+    </div>
+</div>
+<script type="text/javascript" src="../js/lib/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/lib/jindo.js"></script>
+<script type="text/javascript" src="../js/lib/jindo_mobile_component.js"></script>
+<script type="text/javascript" src="../js/lib/jquery.plugin.js"></script>
+<script type="text/javascript" src="../js/ui/ui.common.js"></script>
+</body>
+</html>
