@@ -29,6 +29,5 @@ node_modules
 # bower directory
 bower_components
 
-
 # webstorm derectory
 .idea

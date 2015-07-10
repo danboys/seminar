@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" id="top" data-hero-type="superHero" data-hero-name="Batman">
+<meta charset="utf-8">
+<title>Test Suite: Response JS</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="../css/bootstrap.css"/>
+<link rel="stylesheet" href="../css/bootstrap-theme.css"/>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style type="text/css">
+  #slider img {width: 100%;}
+</style>
+</head>
+<body>
+<h1>Hello, world!</h1>
+
+<ul id="slider">
+  <li><img src="#" data-src0="../images/img_banner_main_01_1.jpg" data-src768="../images/img_main_slide1.png"/></li>
+  <li><img src="#" data-src0="../images/img_banner_main_01_2.jpg" data-src768="../images/img_main_slide2.png"/></li>
+  <li><img src="#" data-src0="../images/img_banner_main_01_3.jpg" data-src768="../images/img_main_slide3.png"/></li>
+  <li><img src="#" data-src0="../images/img_banner_main_01_4.jpg" data-src768="../images/img_main_slide4.png"/></li>
+  <li><img src="#" data-src0="../images/img_banner_main_01_5.jpg" data-src768="../images/img_main_slide5.png"/></li>
+</ul>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individ ual files as needed -->
+<script src="http://airve.github.io/js/response/response.js"></script>
+<script src="../js/jquery.bxslider.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+  $(function () {
+    Response.create([
+      {"prop": "width", "prefix": "src", "breakpoints": [0, 768, 992, 1200]}
+//      {"prop": "width", "prefix": "min-width-", "breakpoints": [0, 768, 992, 1200]}
+    ]);
+    Response.ready(function(){
+      console.log("Response.ready");
+      $('#slider').bxSlider({
+
+      });
+    });
+    Response.action(function(){
+      //console.log("stuff to do on ready and resize");
+    });
+
+    Response.crossover(function(){
+      console.log("Response.crossover");
+    }, "width");
+    Response.resize(function () {
+      if (Response.band(1200)) {
+        // 1200+
+        console.log("1200+");
+      }
+      else if (Response.band(992)) {
+        // 992+
+        console.log("992+");
+      }
+      else if (Response.band(768)) {
+        // 768+
+        console.log("768+");
+      }
+      else {
+        // 0->768
+        console.log("768-");
+      }
+    });
+  })
+</script>
+<script type="text/javascript">
+$(function(){
+
+
+})
+</script>
+</body>
+</html>
