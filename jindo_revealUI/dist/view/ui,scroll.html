@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>Emart Eveyday Smart Office</title>
+    <link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ui/bootstrap-theme-kr.css">
+    <link rel="stylesheet" href="../css/ui/bootstrap-theme-kr-media.css">
+    <style>
+        .headerfix {
+            height: 50px;
+            background: #000000;
+        }
+        .footerfix {
+            height: 50px;
+            background: #000;
+        }
+
+    </style>
+</head>
+<body>
+<div class="headerfix">헤더영역</div>
+<div id="view"> <!-- Wrapper -->
+    <div> <!-- Scrooller -->
+        <p>시작점!!! <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>무궁화 꽃이 피었습니다. <br/></p>
+        <p>끝점!!! <br/></p>
+
+    </div>
+</div>
+<div class="footerfix">풋터영역</div>
+<script type="text/javascript" src="../js/lib/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/lib/jindo.js"></script>
+<script type="text/javascript" src="../js/lib/jindo_mobile_component.js"></script>
+<script type="text/javascript" src="../js/lib/jquery.plugin.js"></script>
+<script type="text/javascript" src="../js/ui/ui.common.js"></script>
+<script>
+    console.log($(window).height() - $('.headerfix').height() - $('.footerfix').height())
+    var oScroll = new jindo.m.Scroll("view", {
+        nHeight : $(window).height() - $('.headerfix').height() - $('.footerfix').height(),
+        bUseBounce : false
+    });
+
+</script>
+
+</body>
+</html>

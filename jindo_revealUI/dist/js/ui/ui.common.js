@@ -91,7 +91,7 @@ EmartMO.view.global.prototype = {
 				return false
 			}
 		},
-        footer: function(){
+		footer: function(){
 			if ($(".jmc-footer").length > 0 ) {
 				return jindo.$Element(jindo.$$.getSingle(".jmc-footer")).height()
 			} else {
@@ -195,12 +195,11 @@ EmartMO.view.global.prototype = {
 			}
 
 			oThis.oReveal = new jindo.m.SlideReveal({
-					"sClassPrefix": "rs-",
-					"nDuration": 300,
-					"nMargin": oThis.sDevice,
-					"sDirection": "left"
-				})
-			.attach({
+				"sClassPrefix": "rs-",
+				"nDuration": 300,
+				"nMargin": oThis.sDevice,
+				"sDirection": "left"
+			}).attach({
 				"beforeShow": function() {
 					jindo.$Element(jindo.$$.getSingle(".rs-nav")).show();
 					if (!oThis.oScrollNav) {
@@ -242,7 +241,7 @@ EmartMO.view.global.prototype = {
 					}
 				},
 				"hide": function(oCustomEvent) {
-					//touchAllMenu();//개발 적용하면 안됨
+					oEmartMO.oScrollNav.scrollTo(0, 0);
 				},
 				"rotate": function() {
 					//if (oThis.oScroll) {
